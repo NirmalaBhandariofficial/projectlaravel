@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+table td{
+    @apply border border-black/20 p-4;
+}
+
+table tr:nth-child(even){
+    @apply bg-gray-200;
+}
+
+table.job-table tr:nth-child(even){
+    @apply bg-transparent;
+}
+
+table.job-table tr td:first-child{
+    @apply bg-green-500 text-white;
+}
+table.job-table tr td{
+    @apply border-white;
+}
+table.job-table tr td:last-child{
+    @apply bg-white;
+}
